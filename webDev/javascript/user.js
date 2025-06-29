@@ -33,10 +33,10 @@ const user = new User("1");
 const adminUser = new AdminUser("adimin_1");
 
 try{
-    adminUser.deleteUser(user);
     if(!(user instanceof User)){
         throw "Userオブジェクトを引数にする必要があります。";
     }
+    adminUser.deleteUser(user);
 }catch (error){
     console.log(error);
 }
