@@ -19,8 +19,8 @@ class User {
 
 class AdminUser extends User {
 
-    constructor(){
-        super(User);
+    constructor(name){
+        super(name);
     }
 
     deleteUser(user) {
