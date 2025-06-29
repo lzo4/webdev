@@ -28,3 +28,6 @@ class AdminUser extends User {
         console.log(`${user.username}を削除しました。`);
     }
 }
+
+const user = new User("1");
+const adminUser = new AdminUser("adimin_1");
