@@ -24,6 +24,9 @@ class AdminUser extends User {
     }
 
     deleteUser(user) {
+        if(!(user instanceof User)){
+        throw "Userオブジェクトを引数にする必要があります。";    
+        }
         user.deleted = 1;
         console.log(`${user.username}を削除しました。`);
     }
@@ -33,10 +36,8 @@ const user = new User("1");
 const adminUser = new AdminUser("adimin_1");
 
 try{
-    if(!(user instanceof User)){
-        throw "Userオブジェクトを引数にする必要があります。";
-    }
     adminUser.deleteUser(user);
+    user.login();
 }catch (error){
     console.log(error);
 }
