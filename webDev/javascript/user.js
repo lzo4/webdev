@@ -16,3 +16,15 @@ class User {
     
     }
 }
+
+class AdminUser extends User {
+
+    constructor(){
+        super(User);
+    }
+
+    deleteUser(user) {
+        user.deleted = 1;
+        console.log(`${user.username}を削除しました。`);
+    }
+}
