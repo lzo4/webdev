@@ -31,3 +31,5 @@ class AdminUser extends User {
 
 const user = new User("1");
 const adminUser = new AdminUser("adimin_1");
+
+adminUser.deleteUser(user);
