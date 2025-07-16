@@ -12,9 +12,11 @@ function add(...numbers) {
 }
 
 function minus(...numbers) {
-    let sum = 0;
-    for (number of numbers){
-        sum -= number;
+    let sum = numbers[0];
+    for (let i =0;i < numbers.length;i++){
+        sum -= numbers[i];
     }
     return sum;
 }
+
+CalcAndDisp(add,console.log,...[9,10,0,4,10]);
