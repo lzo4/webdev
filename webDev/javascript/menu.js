@@ -5,3 +5,4 @@ const menu = new Map([
     ["パスタ",1500],
 ]);
 
+menu.set("カレー",1700);
