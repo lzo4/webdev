@@ -19,7 +19,7 @@ const orders = [
     ["ホットコーヒー",2,1000],
 ];
 
-const deletedTaruto = orders.filter(([orderItem]) => {orderItem != タルト;});
+const deletedTaruto = orders.filter(([orderItem]) => {orderItem != "タルト";});
 orders.every(([,,price]) => price < 3000);
 const sortedOrders = orders.sort(([,,priceA],[,,priceB]) => priceB - priceA)
 
